@@ -20,3 +20,10 @@ print(server_info)
 print(server_info.items())
 for key, value in server_info.items():
     print(f"{key} : {value}")
+
+test = {
+    "first": 1,
+    "second" : 2
+}
+
+print("first" not in test.keys())
