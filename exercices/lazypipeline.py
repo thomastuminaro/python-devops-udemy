@@ -48,7 +48,7 @@ def parse_config_lines(lines):
         if line.startswith("["):
             section = line.strip("[]")
             continue
-        yield (section, line.strip(" ").split("=")[0], "=".join(line.strip(" ").split("=")[1:]).strip()) 
+        yield (section, line.strip(" ").split("=")[0].strip(), "=".join(line.strip(" ").split("=")[1:]).strip()) 
 
 if __name__ == "__main__":
     conf = Path(__file__).parent / "files/conf.txt"
