@@ -36,5 +36,5 @@ def configure_logging(verbose: bool) ->logging.Logger:
     return logger
 
 if __name__ == "__main__":
-    log = configure_logging("dede")
+    log = configure_logging(True)
     log.debug("Testing debug...")
